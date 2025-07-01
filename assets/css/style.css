@@ -121,9 +121,12 @@ main
 }
 
 .ABOUT_img {
-    max-width: 190px;
-    height: fit-content;
-    flex-shrink: 0;
+    width: 100%;         /* 親コンテナ幅いっぱいに広げる */
+    max-width: 300px;    /* 必要に応じて最大幅を指定 */
+    height: auto;        /* 高さは自動調整（縦横比維持） */
+    object-fit: contain; /* 画像を縦横比を保ったまま収める */
+    display: block;      /* 余白調整しやすいようにブロック化 */
+    margin: 0 auto;      /* 中央寄せ */
 }
 
 .ABOUT_name {
