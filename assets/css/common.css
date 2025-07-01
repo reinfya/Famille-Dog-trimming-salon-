@@ -44,7 +44,13 @@ img {
     z-index: 10;
   }
 
- 
+  @media screen and (max-width:820px) {
+    .section__topic {
+        font-size: 6.5rem;
+        letter-spacing: 14px;
+    }
+
+ }
 
 
 
