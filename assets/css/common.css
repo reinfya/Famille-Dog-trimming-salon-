@@ -44,42 +44,9 @@ img {
     z-index: 10;
   }
 
-  .section__topic--ALBUM {
-    color: #fff;
-    z-index: 3;
-    position: absolute;
-    position-area: center;
-    font-size: 8.5rem;
-}
+ 
 
-/* section__topic sp */
-@media screen and (max-width:768px) {
-    .section__topic {
-        display: flex;
-        align-items: center; /* 垂直中心 */
-        justify-content: center; /* 水平中心 */
-        flex-shrink: 0;
-        color: #B29586;
-        font-family: "Cormorant Garamond";
-        font-size: 7rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 1.8rem;
-        z-index: 1;
-      }
 
-      .section__topic--ALBUM {
-        font-size: max(min(6rem, 10vw), 4.5rem);
-        letter-spacing: 1.6rem;
-        color: #fff;
-        z-index: 3;
-        position: absolute;
-        position-area: center;
-        margin-top: 2rem;
-        
-    }
-}
 
 
 

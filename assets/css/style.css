@@ -122,11 +122,11 @@ main
 
 .ABOUT_img {
     width: 100%;         /* 親コンテナ幅いっぱいに広げる */
-    max-width: 300px;    /* 必要に応じて最大幅を指定 */
+    max-width: 250px;    /* 必要に応じて最大幅を指定 */
     height: auto;        /* 高さは自動調整（縦横比維持） */
     object-fit: contain; /* 画像を縦横比を保ったまま収める */
     display: block;      /* 余白調整しやすいようにブロック化 */
-    margin: 0 auto;      /* 中央寄せ */
+    text-align: left;      /* 中央寄せ */
 }
 
 .ABOUT_name {
@@ -345,7 +345,8 @@ main
 
 .POINT_kusi {
     width: 22%;
-    height: fit-content;
+    height: auto;
+    flex-shrink: 0;
     position: absolute;
     bottom: 90%;
     left: 3%;
@@ -353,7 +354,8 @@ main
 
 .POINT_hasami {
     width: 36%;
-    height: fit-content;
+    height: auto;
+    flex-shrink: 0;
     position: absolute;
     left: 60%;
     top: -20%;
@@ -916,10 +918,17 @@ letter-spacing: 3.5px;
 
 
 .section__topic--ALBUM {
-    color: #fff;
-    z-index: 3;
+    font-size: 6rem;
+    color: #fff !important;
+    z-index: 10;
     position: absolute;
-    position-area: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+    pointer-events: none; /* 背景クリック対策（任意） */
 }
 
 
@@ -991,12 +1000,9 @@ letter-spacing: 3.5px;
         margin-top: 2rem;
     }
     .section__topic--ALBUM {
-        font-size: 6rem;
+        font-size: 6rem !important;
         color: #fff;
-        z-index: 10;
-        position: absolute;
-        position-area: center;
-        margin-top: 2rem;
+        
         
     }
 
