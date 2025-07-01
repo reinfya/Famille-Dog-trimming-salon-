@@ -48,6 +48,7 @@ img {
     .section__topic {
         font-size: 6.5rem;
         letter-spacing: 14px;
+        
     }
 
  }
@@ -329,7 +330,7 @@ letter-spacing: 2.1px;
 /*丸の拡大*/
 .circle-bg{
     position: fixed;
-	z-index:4;
+	z-index:99;
     /*丸の形*/
     width: 100px;
     height: 100px;
