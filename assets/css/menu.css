@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+
+
+
+.MAIN_name {
+    color: #000;
+    font-family: "Cormorant Garamond";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 10.24px;
+    text-align: center;
+    padding: 20rem 0 10rem 0;
+  }
+  
+  .MAIN_box {
+    display: flex;
+    flex-direction: column;
+    width: calc(1277 / 1440 * 100vw);
+    margin-left: auto;
+  }
+  
+  
+  
+  .MAIN_imgpc {
+      display: flex;
+      max-width: 100%;
+      height: auto;
+      flex-shrink: 0;
+      margin: 0 0 0 auto;
+  }
+  
+  .MAIN_imgsp {
+    display: none;
+  }
+  
+  .MAIN_txt {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 43px; /* 252.941% */
+      letter-spacing: 1.5px;
+      padding-block: 8rem;
+  }
+  
+  .MAIN_walk {
+      width: 250px;
+      height: auto;
+      display: flex;
+      flex-shrink: 0;
+      margin: 0 0 0 auto;
+      padding-right: 5%;
+  }
+  
+  /* MAINsp */
+  @media screen and (max-width:820px){
+    .MAIN_box {
+        width: calc(350 / 375 * 100vw);
+    }
+    
+    .MAIN_name {
+      
+      font-size: 48px;
+      padding: 6rem 0 6rem 0;
+    }
+    
+    .MAIN_imgpc {
+        display: none;
+    }
+  
+    .MAIN_imgsp {
+      display: flex;
+      max-width: 100%;
+      height: auto;
+      flex-shrink: 0;
+      margin: 0 0 0 auto;
+    }
+    
+    .MAIN_txt {
+        font-size: 15px;
+        padding-block: 7rem;
+        width: 96%;
+    }
+    
+    .MAIN_walk {
+        width: 200px;
+        
+    }
+   
+  }
+
+
+.PLAN_box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 8rem 4rem 8rem 4rem;
+}
+
+.PLAN_block {
+    display: flex;
+    flex-direction: column;
+    width: 411px;
+    height: auto;
+    gap: 3rem;
+}
+
+.PLAN_name {
+    font-family: "Cormorant Garamond";
+    font-size: 34px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3px;
+    padding-bottom: 1rem;
+}
+
+.PLAN_txt1 {
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px; /* 175% */
+    letter-spacing: 1.5px;
+}
+
+.PLAN_txt2 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 1.5px;
+}
+
+.PLAN_txt3 {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+/* PLANsp */
+@media screen and (max-width: 768px) {
+    .PLAN_box {
+        display: flex;
+        justify-content: center;
+        width:80%;
+        margin:0 auto;
+        padding: 8rem 0 8rem 0;
+    }
+    .PLAN_box .slick-slide {
+        margin:0 10px;
+    }
+    
+    .PLAN_name {
+        
+        font-size: 33px;
+        
+        padding: 3rem 0 1rem 0;
+    }
+
+    
+    
+    .PLAN_txt1 {
+        font-size: 18px;
+        padding-block: 2rem;
+    }
+    
+    .PLAN_txt2 {
+        font-size: 14px;
+        padding-block: 1rem;
+    }
+    
+    .PLAN_txt3 {
+        font-size: 14px;
+        padding-block: 1rem;
+    }
+    .slider {
+        margin: 0 auto;
+        max-width: 500px;
+        width: 80%;
+      }
+      .slider-img img {
+        
+        height: auto;
+        width: 100%;
+        
+      }
+      .slide-arrow {
+        bottom: 0;
+        cursor: pointer;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        width: 24px;
+        
+      }
+      .prev-arrow {
+        left: -32px;
+        
+      }
+      .next-arrow {
+        right: -32px;
+      }
+    
+}
+
+
+/* Aroma */
+
+.title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.32px;
+    text-align: center;
+    padding-block: 8rem;
+}
+
+
+.Aroma_txt {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 0.15rem;
+    padding-block: 7rem;
+}
+
+.Aroma_imgpc {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0 0 0 auto;
+}
+
+.Aroma_imgsp {
+    display: none;
+}
+
+/* Aromasp */
+@media screen and (max-width:769px){
+    .Aroma_txt {
+        font-size: 14px;
+        width: 95%;
+    }
+
+    .title {
+        font-size: 28px;
+        letter-spacing: 2.88px;
+    }
+
+    .Aroma_imgpc {
+        display: none;
+    }
+
+    .Aroma_imgsp {
+        display: flex;
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0 0 0 auto;
+    }
+}
+
+.section--price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 8rem;
+}
+
+.price_img {
+    width: 60%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+
+
+/* PRICEsp */
+@media screen and (max-width:769px){
+    .price_img {
+        width: 95%;
+        height: auto;
+        flex-shrink: 0;
+    }
+}

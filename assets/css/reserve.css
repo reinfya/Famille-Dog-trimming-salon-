@@ -1,0 +1,402 @@
+@charset "utf-8";
+
+.MAIN_name {
+  color: #000;
+  font-family: "Cormorant Garamond";
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 10.24px;
+  text-align: center;
+  padding: 20rem 0 10rem 0;
+}
+
+.MAIN_box {
+  display: flex;
+  flex-direction: column;
+  width: calc(1277 / 1440 * 100vw);
+  margin-left: auto;
+}
+
+
+
+.MAIN_imgpc {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0 0 0 auto;
+}
+
+.MAIN_imgsp {
+  display: none;
+}
+
+.MAIN_txtbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-block: 5rem;
+}
+
+.MAIN_txt {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px; /* 252.941% */
+  letter-spacing: 1.5px;
+  padding-block: 8rem;
+}
+
+.MAIN_walk {
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-shrink: 0;
+  margin: 0 0 0 auto;
+  padding-right: 5%;
+}
+
+/* MAINsp */
+@media screen and (max-width:820px){
+.MAIN_box {
+    width: calc(350 / 375 * 100vw);
+}
+
+.MAIN_name {
+  
+  font-size: 48px;
+  padding: 6rem 0 6rem 0;
+}
+
+.MAIN_imgpc {
+    display: none;
+}
+
+.MAIN_imgsp {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  margin: 0 0 0 auto;
+}
+
+.MAIN_txt {
+    font-size: 15px;
+    padding-block: 7rem;
+    width: 96%;
+}
+
+.MAIN_walk {
+    width: 200px;
+    
+}
+ 
+}
+
+
+
+
+
+
+.RES_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+}
+
+.RES_ul {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2rem;
+  gap: 1rem;
+}
+
+.RES_list {
+  display: flex;
+  gap: 4rem;
+}
+
+.RES_name {
+  
+  font-family: "Noto Serif JP";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 2.7px;
+}
+
+.RES_txt {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; 
+  letter-spacing: 1px;
+}
+
+.RES_input {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.textbox {
+  width: 30rem;
+  padding: 3px 7px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: white;
+}
+
+.textbox:focus {
+  outline: 0;
+  border: 2px solid #2196f3;
+}
+
+.message {
+  width: 30rem;
+  padding: 3px 7px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: white;
+}
+
+.message:focus {
+  outline: 0;
+  border: 2px solid #2196f3;
+}
+
+label[for] {
+  cursor: pointer;
+  width: 300px;
+  flex-shrink: 0;
+  border-left: 2px solid #D1AE9D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+
+  font-family: "Noto Serif JP";
+  font-size: 15px;
+ 
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 2.7px;
+}
+
+
+
+
+
+.RES_servise {
+  display: flex;
+  flex-direction: column;
+  padding-block: 3rem;
+}
+
+.datetime {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  gap: 1rem;
+}
+
+
+
+input[type=checkbox]  {
+  display: none;
+}
+
+
+
+.radioItem {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  width: fit-content;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.radioItem:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.radioButton {
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.radioButton:checked::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 12px;
+  height: 12px;
+  margin: auto;
+  border-radius: 9999px;
+  background-color: #06b6d4;
+}
+
+.RES_box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding-block: 5rem;
+  width: 90%;
+}
+
+
+
+.RES_cansel {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px; /* 175% */
+  letter-spacing: 3px;
+  padding-bottom: 3rem;
+}
+
+
+
+/* 021 */
+.button021 a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 10px 70px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-size: 15px;
+  
+  font-weight: 400;
+  line-height: 35px; /* 218.75% */
+  letter-spacing: 2.4px;
+  
+}
+
+.button021 a::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+background-color:rgb(178, 149, 134,0.2);
+;
+transition: all 0.6s;
+}
+.button021 a:hover::before {
+opacity: 0;
+transform: scale(0.4, 0.4);
+}
+.button021 a::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+opacity: 0;
+transition: all 0.3s;
+border: 2px solid rgb(178, 149, 134,0.4);
+transform: scale(1.2, 1.2);
+}
+.button021 a:hover::after {
+opacity: 1;
+transform: scale(1, 1);
+}
+
+.br-sp {
+  display: none;
+}
+
+
+/* RESERVEsp */
+@media screen and (max-width:769px){
+
+
+  .RES_ul {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .RES_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+    flex-shrink: 0;
+  }
+
+  label[for] {
+    cursor: pointer;
+    width: 300px;
+    flex-shrink: 0;
+    border-left: 2px solid #D1AE9D;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+
+  .RES_cansel {
+    font-size: 16px;
+    
+  }
+
+  .RES_txt {
+    font-size: 13px;
+    
+  }
+
+  .RES_servise {
+    display: flex;
+    flex-direction: column;
+    padding-block: 3rem;
+    max-width: 300px;
+  }
+
+  .datetime {
+    padding-bottom: 5rem;
+  }
+
+  .RES_box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding-block: 5rem;
+    width: 80%;
+  }
+
+  .br-sp {
+        display: block;
+    }
+
+}
